@@ -331,3 +331,13 @@ Every numerical claim in the report is cited inline. Format:
 | RBI / World Bank macro | `[RBI:npa_ratio]`, `[RBI:cpi]` |
 | SEBI insider trading | `[SEBI:Infosys:insider]` |
 | GDP growth outlook | `[IMF:gdp_growth]` |
+
+---
+
+## Disclaimer
+
+This application is intended for informational and research purposes only. The reports generated are based on publicly available data and analyst consensus, and may contain errors, omissions, or outdated information.
+
+**Nothing in this application constitutes financial, investment, legal, or tax advice.** Do not buy, sell, or hold any security based solely on the output of this tool.
+
+The author and contributors of this project accept no responsibility or liability for any financial loss, damage, or other consequences — direct or indirect — arising from the use of, or reliance on, information produced by this application. Users are solely responsible for their own investment decisions and are strongly advised to consult a qualified financial advisor before acting on any information.
