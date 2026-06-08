@@ -110,39 +110,43 @@ sequenceDiagram
 ### 1. Clone the repo
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/srinivas-sateesh/India-Finance-Deep-Researcher.git
 cd India-Finance-Deep-Researcher
 ```
 
-### 2. Backend
+### 2. Fill in your keys
 
 ```bash
 cd backend
-
-# Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment
 cp .env.example .env
-# Edit .env — required: OPENAI_API_KEY
 ```
 
-Or with `uv` (faster):
+Open `backend/.env` and set your keys — only `OPENAI_API_KEY` is required to run:
+
+```
+OPENAI_API_KEY=sk-...          # required — needs access to o3 and gpt-4o
+LANGCHAIN_API_KEY=ls__...      # optional — only if you want LangSmith tracing
+```
+
+Everything else in `.env` (ports, model names, source URLs) has sensible defaults and can be left as-is.
+
+### 3. Install backend dependencies
 
 ```bash
+# Using pip
+python -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+
+# Or using uv (faster)
 uv venv --python 3.11 && uv pip install -r requirements.txt
 ```
 
-### 3. Frontend
+### 4. Install frontend dependencies
 
 ```bash
 cd ../frontend
 npm install
-cp .env.example .env   # optional — only needed to change ports
 ```
 
 ---
