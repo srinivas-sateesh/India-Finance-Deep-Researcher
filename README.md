@@ -162,8 +162,7 @@ cp .env.example .env   # optional — only needed to change ports
 | `EVALUATOR_MODEL` | `gpt-4o` | Model for evaluating research progress |
 | `CONNECTOR_TIMEOUT` | `30` | HTTP timeout in seconds for all connector requests |
 | `CONNECTOR_RETRIES` | `5` | Max retry attempts on 429/5xx (exponential backoff) |
-| `WORLDBANK_API_BASE` | `https://api.worldbank.org/v2/country/IN/indicator` | World Bank API base URL (RBI macro + IMF GDP connector) |
-| `IMF_BASE_URL` | `https://www.imf.org/external/datamapper/api/v1` | Reserved for future use if IMF API access is restored |
+| `WORLDBANK_API_BASE` | `https://api.worldbank.org/v2/country/IN/indicator` | World Bank API base URL — used by both RBI connector (historical macro) and IMF connector (GDP growth forecasts via GEP source=27) |
 | `NSE_BASE_URL` | `https://www.nseindia.com` | NSE base URL (SEBI insider trading) |
 | `YAHOO_SEARCH_URL` | `https://query2.finance.yahoo.com/v1/finance/search` | Yahoo Finance ticker search (BSE connector) |
 
