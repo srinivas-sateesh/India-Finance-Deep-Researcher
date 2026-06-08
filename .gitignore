@@ -1,0 +1,39 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+backend/.env
+backend/.env.local
+frontend/.env
+frontend/.env.local
+
+# ── Markdown (except root README) ────────────────────────────────────────────
+*.md
+!/README.md
+
+# ── Claude Code ───────────────────────────────────────────────────────────────
+.claude/
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# ── Database & output ─────────────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+backend/logs/
+backend/output/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+dist/
+frontend/dist/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
